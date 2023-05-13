@@ -3,7 +3,7 @@ class Solution:
         l = 0
         r = len(s) - 1
 
-        while l < r and l != r:
+        while l < r:
             if not s[l].isalnum():
                 l+=1
             elif not s[r].isalnum():
