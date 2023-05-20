@@ -22,13 +22,7 @@ class Solution:
             curr = root.right
             return self.lowestCommonAncestor(curr, p, q)
             
-        elif (root.val > p.val and root.val < q.val) or (root.val < p.val and root.val > q.val):
+        else:
             #in-between
 
             return curr
-
-        elif root.val == p.val:
-            return p
-        
-        elif root.val == q.val:
-            return q
