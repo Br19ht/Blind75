@@ -4,11 +4,11 @@
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         l, r = 1, n
-        while l <= r:
+        while l < r:
             m = (l+r)//2
             if isBadVersion(m):
-                r = m - 1
+                r = m
             else:
                 l = m + 1
-        return r+1
+        return r
         
